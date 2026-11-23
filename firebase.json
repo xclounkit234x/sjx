@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "site": "sjx-dev",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
