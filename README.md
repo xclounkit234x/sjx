@@ -79,6 +79,4 @@ policies. Public relay availability is not guaranteed.
 The app also loads fonts and icons from external CDNs. For attribution and
 third-party dependency details, open `gust://credits` inside reGUST.
 
-**Built off of:**
-[GUST](https://github.com/nautilus-os/GUST) by [Nautilus Labs](https://github.com/nautilus-os/)
-[Scramjet](https://github.com/MercuryWorkshop/scramjet) by [Mercury Workshop](https://github.com/MercuryWorkshop/)
+**Built off of** [GUST](https://github.com/nautilus-os/GUST) by Nautilus Labs & [Scramjet](https://github.com/MercuryWorkshop/scramjet) by Mercury Workshop
