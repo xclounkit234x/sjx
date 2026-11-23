@@ -1,0 +1,141 @@
+
+            .gust-noscript {
+                position: fixed;
+                inset: 0;
+                z-index: 999999;
+                background: rgba(10, 12, 16, 0.5);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                color: #f0f4f8;
+                font-family: 'Segoe UI', Arial, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 24px;
+            }
+            .gust-noscript-box {
+                max-width: 520px;
+                width: 100%;
+                background: rgba(28, 32, 38, 0.88);
+                border: 1px solid rgba(79, 89, 99, 0.4);
+                border-radius: 16px;
+                padding: 40px 36px 36px;
+                box-shadow: 0 12px 48px rgba(0,0,0,0.55);
+                text-align: center;
+            }
+            .gust-noscript-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                margin-bottom: 20px;
+            }
+            .gust-noscript-icon .fa-js {
+                font-size: 64px;
+                color: #f7df1e;
+                display: block;
+            }
+            .gust-noscript-icon .gust-qmark {
+                font-size: 52px;
+                color: #ffffff;
+                display: block;
+                position: relative;
+                top: 1px;
+                left: 4px;
+                animation: gust-qmark-shake 1.8s cubic-bezier(0.36,0.07,0.19,0.97) infinite;
+                transform-origin: center bottom;
+            }
+            .gust-noscript-title {
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 16px;
+                color: #f0f4f8;
+            }
+            .gust-noscript-body {
+                font-size: 14px;
+                color: #b8c4d0;
+                line-height: 1.7;
+                margin-bottom: 20px;
+            }
+            .overlay-err-btns {
+                display: flex;
+                gap: 10px;
+                margin-top: 6px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .overlay-err-btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+                padding: 10px 20px;
+                border-radius: var(--radius-sm);
+                font-size: 13px;
+                font-family: var(--ui);
+                font-weight: 600;
+                cursor: pointer;
+                border: 1px solid transparent;
+                transition: background .15s, border-color .15s, color .15s;
+                background: transparent;
+                color: var(--tx);
+                text-align: center;
+                min-width: 140px;
+                text-decoration: none;
+            }
+            .overlay-err-btn:hover {
+                text-decoration: none;
+            }
+            #limited-mode:target + .gust-noscript {
+                display: none !important;
+                visibility: hidden !important;
+                pointer-events: none !important;
+            }
+            .overlay-err-btn.reload {
+                background: var(--err);
+                color: #1a0a0a;
+                border-color: var(--err);
+            }
+            .overlay-err-btn.reload:hover {
+                background: #ffb3b3;
+                border-color: #ffb3b3;
+            }
+            .overlay-err-btn.limited {
+                background: transparent;
+                color: var(--tx3);
+                border-color: var(--bd);
+            }
+            .overlay-err-btn.limited:hover {
+                background: var(--surface);
+                color: var(--tx2);
+                border-color: var(--bd2);
+            }
+            .gust-noscript-steps {
+                background: #252b33;
+                border-radius: 10px;
+                padding: 18px 20px;
+                text-align: left;
+                margin-bottom: 24px;
+            }
+            .gust-noscript-steps p {
+                font-size: 13px;
+                font-weight: 600;
+                color: #9de5ff;
+                margin-bottom: 10px;
+            }
+            .gust-noscript-steps ol {
+                margin: 0;
+                padding-left: 20px;
+                font-size: 13px;
+                color: #b8c4d0;
+                line-height: 1.9;
+            }
+            .gust-noscript-alt {
+                font-size: 12px;
+                color: #7d8a98;
+                line-height: 1.6;
+            }
+            .gust-noscript-alt a {
+                color: #9de5ff;
+            }
+        

@@ -1,0 +1,15 @@
+{
+  "name": "regust",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:singlefile",
+    "build:rewriter": "vite build --config vite.rewriter.config.js",
+    "build:singlefile": "npm run build:rewriter && node scripts/build-singlefile.mjs"
+  },
+  "devDependencies": {
+    "@mercuryworkshop/scramjet": "^2.1.0",
+    "vite": "^8.3.8"
+  }
+}
